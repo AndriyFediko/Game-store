@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>game store</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="gameInfoBackground">
+        <div class="gameInfoBlock">
+            <img class="closeGameInfo" src="./img/WRONG.png" alt="close">
+            <span id="gameNameTitle">ARK</span>
+            <div class="gameMomentsSlider">
+                <div class="circle">
+                    <img src="./img/arrow.png" alt="back">
+                </div>
+                <div class="circle">
+                    <img src="./img/arrow.png" alt="back">
+                </div>
+            </div>
+            <span class="rate">
+                Rate: 5.0 
+                <div class="starsRate">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                </div>
+            </span>
+            <div class="aboutGame">
+                <span id="aboutGame">About ARK:</span>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A dolorem expedita vero quidem excepturi minus distinctio laboriosam perferendis sequi omnis officia harum est tenetur, enim ea itaque quia asperiores et ullam quam totam unde dolore. Exercitationem!</span>
+            </div>
+            <button class="download">Download for $15.99</button>
+        </div>
+    </div>
+    <div class="addGameBackground">
+        <div class="addGameBlock">
+            <img id="AddGameClose" src="./img/WRONG.png" alt="close">
+            <span>Add game</span>
+            <input class="gameName addGameInp" placeholder="Enter game name" type="text">
+            <input class="gamePrice addGameInp" placeholder="Enter game price ($ dolars)" type="number">
+            <input class="addGameInp" placeholder="Enter image url" id="imageUrl" type="text">
+            <span>or</span>
+            <div class="dropFile">
+                <input id="imageFile" type="file">
+                <div class="plusBox">
+                    <img src="./img/plus.png" alt="plus">
+                </div>
+            </div>
+            <!-- <span class="instructionSpan">Drop download file</span>
+            <div class="dropFile">
+                <input id="downloadFile" type="file">
+                <div class="plusBox">
+                    <img src="./img/plus.png" alt="plus">
+                </div>
+            </div> -->
+            <button class="save">Add game</button>
+        </div>
+    </div>
+    <div class="backgroundMask">
+        <div class="logInScreen">
+            <img id="close" src="./img/WRONG.png" alt="close">
+            <img src="./img/logo.png" alt="logo">
+            <span>Sign in</span>
+            <input class="inp" id="loginInp" type="text" placeholder="Enter your login">
+            <input class="inp" id="passwordInp" type="text" placeholder="Enter your password">
+            <button id="SignUp">Sign up</button>
+            <button id="SignIn">Sign in</button>
+        </div>
+    </div>
+    <div class="wrap">
+        <header>
+            <div class="header__left">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <nav>
+                    <span>Store</span>
+                    <span>Game pass</span>
+                    <span>Social</span>
+                </nav>
+            </div>
+            <div class="header__right">
+                <div class="inputCotainer">
+                    <input id="search" placeholder="search for games" type="text">
+                    <img src="./img/glass.png" alt="search">
+                </div>
+                <div id="avatar" class="avatar">
+                    <img src="./img/avatar.png" alt="avatar">
+                </div>
+                <div class="loginDropDown" id="loginDropDown">
+                    <div class="option" id="logIn">Sign in</div>
+                </div>
+            </div>
+        </header>
+        <div class="newsSlider">
+            <div class="slider__line" id="newsLine">
+                <div class="slider__iteam" id="slider__iteam1">
+                    <div class="imgText" id="imgTextSlide1">
+                        <div class="title">Start your adventures now</div>
+                        <span>ARK is avaluable now</span>
+                    </div>
+                </div>
+                <div class="slider__iteam" id="slider__iteam2">
+                    <div class="imgText" id="imgTextSlide2">
+                        <div class="title">Start your adventures now</div>
+                        <span>Minecraft Dungens is avaluable now</span>
+                    </div>
+                </div>
+                <div class="slider__iteam" id="slider__iteam3">
+                    <div class="imgText" id="imgTextSlide3">
+                        <div class="title">Start your adventures now</div>
+                        <span>GTA5 is avaluable now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sliderInstrumentContainer">
+                <div class="sliderInstrument">
+                    <img id="newsSliderArrowLeft" src="./img/arrow.png" alt="back">
+                    <div class="circle__border" id="slide1Circle">
+                        <div class="circle" id="circle1"></div>
+                    </div>
+                    <div class="circle__border" id="slide2Circle">
+                        <div class="circle" id="circle2"></div>
+                    </div>
+                    <div class="circle__border" id="slide3Circle">
+                        <div class="circle" id="circle3"></div>
+                    </div>
+                    <img id="newsSliderArrowRight" src="./img/arrow.png" alt="forward">
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <button>all games</button>
+            <button>my suscription</button>
+            <button>percs</button>
+            <button>mobile</button>
+        </div>
+        <div class="gameCardsContainer">
+            <div class="sliderTitle">
+                <span>Resently aded</span>
+                <div class="addGame">
+                    <img src="./img/plusWhite.png" alt="plus">
+                    <span>Add game</span>
+                </div>
+                <div class="instruments">
+                    <img id="slider2ArrowLeft" src="./img/arrow.png" alt="back">
+                    <img id="slider2ArrowRight" src="./img/arrow.png" alt="forwards">
+                </div>
+            </div>
+            <div class="gameCardsSliderLine">
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamA">
+                    <div class="gameInfo">
+                        <span class="gameName">Minecraft</span>
+                        <span class="gamePrice">$7.99</span>
+                    </div>
+                </div>
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamB">
+                    <div class="gameInfo">
+                        <span class="gameName">CSGO</span>
+                        <span class="gamePrice">Free</span>
+                    </div>
+                </div>
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamC">
+                    <div class="gameInfo">
+                        <span class="gameName">ARK</span>
+                        <span class="gamePrice">$15.99</span>
+                    </div>
+                </div>
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamD">
+                    <div class="gameInfo">
+                        <span class="gameName">GTA</span>
+                        <span class="gamePrice">$11.49</span>
+                    </div>
+                </div>
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamE">
+                    <div class="gameInfo">
+                        <span class="gameName">The forest</span>
+                        <span class="gamePrice">$5.49</span>
+                    </div>
+                </div>
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamF">
+                    <div class="gameInfo">
+                        <span class="gameName">Angry birds</span>
+                        <span class="gamePrice">Free</span>
+                    </div>
+                </div>
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamG">
+                    <div class="gameInfo">
+                        <span class="gameName">Clash royale</span>
+                        <span class="gamePrice">Free</span>
+                    </div>
+                </div>
+                <div class="gameCardsSliderLine__iteam gameCardsSliderLine__iteamH">
+                    <div class="gameInfo">
+                        <span class="gameName">Brawl stars</span>
+                        <span class="gamePrice">Free</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
